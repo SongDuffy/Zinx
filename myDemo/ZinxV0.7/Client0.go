@@ -26,7 +26,7 @@ func main() {
 	for {
 		//发送封包的message消息 MsgId:0
 		dp := znet.NewDataPack()
-		binaryMsg, err := dp.Pack(znet.NewMsgPackage(0, []byte("ZinxV0.6 client test ping")))
+		binaryMsg, err := dp.Pack(znet.NewMsgPackage(0, []byte("ZinxV0.7 client test ping")))
 		if err != nil {
 			fmt.Println("Pack error:", err)
 			return
