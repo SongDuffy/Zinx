@@ -49,6 +49,7 @@ func main() {
 
 	//链接创建和销毁的HOOK函数
 	s.SetOnConnStart(OnConnectionAdd)
+	s.SetOnConnStop(OnConnectionLost)
 
 	//注册一些路由业务
 	s.AddRouter(2, &apis.WorldChatApi{})
