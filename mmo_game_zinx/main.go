@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"zinx/mmo_game_zinx/apis"
 	"zinx/mmo_game_zinx/core"
 	"zinx/zinx/ziface"
 	"zinx/zinx/znet"
@@ -21,7 +22,25 @@ func OnConnectionAdd(conn ziface.IConnection) {
 	//将当前新上线的玩家添加到World manager中
 	core.WorldMgrObj.AddPlayer(player)
 
+	//将该链接绑定一个pid玩家ID的属性
+	conn.SetProperty("pid", player.Pid)
+
+	//同步周边玩家，告知他们当前玩家已经上线，广播当前玩家信息位置
+	player.SyncSurrounding()
+
 	fmt.Println("=====> Player pid = ", player.Pid, " is arrived <=====")
+}
+
+//给当前链接断开之前触发的hook函数
+func OnConnectionLost(conn ziface.IConnection) {
+	//通过链接属性得到当前链接所绑定的Pid
+	pid, _ := conn.GetProperty("pid")
+
+	player := core.WorldMgrObj.GetPlayerByPid(pid.(int32))
+
+	//玩家下线
+	player.Offline()
+	fmt.Println("Player pid:", pid, "is offline")
 }
 
 func main() {
@@ -30,7 +49,10 @@ func main() {
 
 	//链接创建和销毁的HOOK函数
 	s.SetOnConnStart(OnConnectionAdd)
+
 	//注册一些路由业务
+	s.AddRouter(2, &apis.WorldChatApi{})
+	s.AddRouter(3, &apis.MoveApi{})
 
 	//启动服务
 	s.Serve()

@@ -18,21 +18,51 @@ Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Googl
 Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Google.Protobuf.dll into Unity Child Domain
 Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll (this message is harmless)
 Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll into Unity Child Domain
-- Completed reload, in  0.046 seconds
+- Completed reload, in  0.424 seconds
 Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.614200 ms
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Google.Protobuf.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Google.Protobuf.dll into Unity Child Domain
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 3.495800 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: d0c0 -> priority: 1 
+  Thread -> id: 11d50 -> priority: 1 
+<RI> Initialized touch support.
+UnloadTime: 1.307200 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1222c -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.511900 ms
+UnloadTime: 2.513500 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 368.
-Total: 0.382000 ms (FindLiveObjects: 0.022400 ms CreateObjectMapping: 0.009900 ms MarkObjects: 0.195600 ms  DeleteObjects: 0.153400 ms)
+Total: 0.702300 ms (FindLiveObjects: 0.021600 ms CreateObjectMapping: 0.009500 ms MarkObjects: 0.466900 ms  DeleteObjects: 0.203500 ms)
 
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
@@ -58,41 +88,11 @@ Start Game
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Initialize engine version: 5.4.1f1 (649f48bbbf0f)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Google.Protobuf.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\Google.Protobuf.dll into Unity Child Domain
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll (this message is harmless)
-Loading C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\protobuf-net.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\golang\zinx\mmo_game_zinx\client\client_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 0.602300 ms
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: f420 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.068899 ms
+UnloadTime: 2.527300 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 368.
-Total: 0.495000 ms (FindLiveObjects: 0.022200 ms CreateObjectMapping: 0.013700 ms MarkObjects: 0.250200 ms  DeleteObjects: 0.208200 ms)
+Total: 0.354400 ms (FindLiveObjects: 0.017600 ms CreateObjectMapping: 0.009600 ms MarkObjects: 0.180200 ms  DeleteObjects: 0.146400 ms)
 
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
